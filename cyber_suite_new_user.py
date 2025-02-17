@@ -1,8 +1,8 @@
 # FILE NAME: cyber_suite_new_user.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Michael Orcutt
+# DATE: 2/17/2025
+# BRIEF DESCRIPTION:  A program to make a new user
 
 
 
@@ -23,12 +23,19 @@
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
 
+def new_user():
+    from getpass import getpass
+    name = input( "Please enter your name: ")
+    user_id = input( "Please enter your id: ")
+    password = getpass( "Please enter your password: ")
 
+    print(f'\nWelcome {name}. Your ID is {user_id}.')
 
-
-
-
-
+    hidden_password = "X" * len(password)
+    
+    print(f'\nPASSWORD: \n{hidden_password}')
+    
+new_user()
 
 
 ########### END YER CODE ABOVE THIS LINE ###########
@@ -81,7 +88,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 1. This project has a bit of a speed bump (converting the password to XXXXs). What was your thought process?
 
 
-
+My first thought was to use character multiplication. However, to do so, I needed to know the length of the input password each time it was entered. I ran a quick search and found the len( ) method on geeks for geeks and worked with that. It took me a few to times to put it together correctly but I eventually got it.
 
 
 '''
