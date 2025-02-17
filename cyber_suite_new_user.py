@@ -27,13 +27,13 @@ def new_user():
     from getpass import getpass
     name = input( "Please enter your name: ")
     user_id = input( "Please enter your id: ")
-    password = getpass( "Please enter your password: ")
+    password = getpass( "Please enter your password: \n")
 
-    print(f'\nWelcome {name}. Your ID is {user_id}.')
+    print(f'Welcome {name}. Your ID is {user_id}.\n')
 
     hidden_password = "X" * len(password)
     
-    print(f'\nPASSWORD: \n{hidden_password}')
+    print(f'PASSWORD: \n{hidden_password}')
     
 new_user()
 
