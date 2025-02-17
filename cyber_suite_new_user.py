@@ -27,7 +27,7 @@ def new_user():
     from getpass import getpass
     name = input( "Please enter your name: ")
     user_id = input( "Please enter your user id: ")
-    password = getpass( "Please enter your password: ")
+    password = input( "Please enter your password: ")
 
     print(f'\nWelcome, {name}. Your ID is {user_id}.\n')
 
