@@ -1,5 +1,5 @@
 # FILE NAME: cyber_suite_new_user.py
-
+# DRG - Rerun for points 2025-02-18-2348
 # NAME: Michael Orcutt
 # DATE: 2/17/2025
 # BRIEF DESCRIPTION:  A program to make a new user
