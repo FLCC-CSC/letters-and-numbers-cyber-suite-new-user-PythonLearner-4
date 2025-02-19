@@ -28,6 +28,7 @@ jobs:
           enter your password: \nWelcome, Dave. Your ID is 12345.\n\nPASSWORD: \nXXXXXX"
         comparison-method: exact
         timeout: 10
+        max-score: 7
     - name: Test Case 2 [Katie, 13090, PCT2024]
       id: test-case-2-katie-13090-pct2024
       uses: classroom-resources/autograding-io-grader@v1
@@ -43,6 +44,7 @@ jobs:
           enter your password: \nWelcome, Katie. Your ID is 13090.\n\nPASSWORD: \nXXXXXXX"
         comparison-method: exact
         timeout: 10
+        max-score: 7
     - name: Test Case 3 [John, 10008, TheOtherDayISawABearAGreatBigBear]
       id: test-case-3-john-10008-theotherdayisawabearagreatbigbear
       uses: classroom-resources/autograding-io-grader@v1
@@ -58,6 +60,7 @@ jobs:
           enter your password: \nWelcome, John. Your ID is 10008.\n\nPASSWORD: \nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         comparison-method: contains
         timeout: 10
+        max-score: 6
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
